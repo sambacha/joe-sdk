@@ -1,6 +1,14 @@
-import JSBI from 'jsbi'
+/** 
+ * @package joe-sdk
+ * @version 2022.1.01
+ */
+
+
+import JSBI from './jsbi'
+/** @exports JSBI  */
 export { JSBI }
 
+/** @exports constants  */
 export {
   BigintIsh,
   ChainId,
@@ -29,9 +37,15 @@ export {
   MAXIMILLION_ADDRESS,
 } from './constants'
 
+/** @exports errors  */
 export * from './errors'
+/** @exports entities  */
 export * from './entities'
+/** @exports router  */
 export * from './router'
+/** @exports fetcher  */
 export * from './fetcher'
-
+/** @exports subgraphs */
 export * from './subgraphs'
+
+/** @exports joe-sdk */

@@ -10,13 +10,14 @@ import {
   FACTORY_ADDRESS,
   INIT_CODE_HASH,
   MINIMUM_LIQUIDITY,
+  ChainId
+} from '../constants'
+import {   
   ZERO,
   ONE,
   FIVE,
   _997,
-  _1000,
-  ChainId
-} from '../constants'
+  _1000 } from '../numbers'
 import { sqrt, parseBigintIsh } from '../utils'
 import { InsufficientReservesError, InsufficientInputAmountError } from '../errors'
 import { Token } from './token'

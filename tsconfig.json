@@ -1,12 +1,15 @@
 {
-  "include": ["src", "test"],
+  "include": ["src", "test", "node_modules/@types"],
+  "exclude": [],
   "compilerOptions": {
     "target": "es2018",
+    "lib": ["dom", "esnext"],
     "module": "esnext",
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
-    "rootDir": "./",
+    "outDir": "./build",
+    "rootDir": "./src",
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -20,6 +23,7 @@
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
     "baseUrl": "./",
+    "noEmit": true,
     "paths": {
       "*": ["src/*", "node_modules/*"]
     },
